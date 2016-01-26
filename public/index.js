@@ -1,7 +1,26 @@
 'use strict';
 
+ 
+function pricecalculating() {
+		if(cars[0].id = "p306")
+		{
+			var datedeb = new Date(rentals[0].pickupDate).getDay();
+			var datefin = new Date(rentals[0].returnDate).getDay();
+cars[0].price = (cars[0].pricePerKm * rentals[0].distance) + (cars[0].pricePerDay * ( datedeb - datefin + 1)) 
+		}
+			
+		if(cars[0].id = "rr-sport")
+		{}
+		
+		if(cars[0].id = "p-boxster")
+		{}
+		
+}
+
 //list of cars
 //useful for ALL exercises
+
+
 var cars = [{
   'id': 'p306',
   'vehicule': 'peugeot 306',
@@ -16,6 +35,7 @@ var cars = [{
   'pricePerDay': 100,
   'pricePerKm': 0.45
 }];
+
 
 //list of rentals
 //useful for ALL exercises
@@ -80,6 +100,9 @@ var rentals = [{
     'drivy': 0
   }
 }];
+//exercice 1
+	pricecalculating(cars);
+
 
 //list of actors for payment
 //useful from exercise 5
